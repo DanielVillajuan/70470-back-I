@@ -1,0 +1,1 @@
+{"alumnos":[{"nombre":"Fulano","nota":7},{"nombre":"Roberto","nota":5},{"nombre":"Juan","nota":8}],"curso":"Back I"}
