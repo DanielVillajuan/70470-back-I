@@ -1,10 +1,4 @@
-import http from 'http'
-
-const server = http.createServer((req, res)=>{
-    res.end('Mi primer hola con http')
-})
 
 
-server.listen(8080, ()=>{
-    console.log('Servidor on 8080')
-})
+fetch('http://localhost:8080/alumnos/') // 2 parametro, 1ro url y 2do las opciones de la peticion (?)
+// 1 parametro, hace un GET
