@@ -3,11 +3,21 @@ import { Router } from "express";
 
 const route = Router();
 
+route.use((req, res, next) => {
+    console.log(`${req.method} - ${req.url} -> ${new Date().toLocaleDateString()}`)
+    next()
+})
 
-route.get('/',(req, res) => {
-   
+const setFecha = (req, res, next) => {
+    req.fecha = new Date()
+    next()
+}
+
+route.get('/', setFecha ,(req, res) => {
+   console.log('req.fecha ->' ,req.fecha)
     res.send(`Se envian todos los alumnos`)
 })
+
 route.get('/:id',(req, res) => {
     console.log(req.params)
     res.send(` Buenas noches ${req.params.id} como estas?`)
