@@ -3,6 +3,10 @@ import { prodManager } from "../managers/product.manager.js";
 
 const route = Router()
 
+route.get('/', (req, res) => {
+    res.render('home',{})
+})
+
 route.get('/perfil/:idPerfil', (req, res) => {
     const user = {
         nombre: 'Daniel',
