@@ -26,7 +26,6 @@ socketsServer.on('connection', (socket) => {
 
 
     socket.on('mensaje', (data) => {
-        console.log(data)
         mensajesLogs.push(data)
         socketsServer.emit('logs', mensajesLogs)
     })
