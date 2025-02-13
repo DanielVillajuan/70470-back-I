@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch src/server.js"
+    "dev": "node --watch  src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "express": "^4.21.1",
     "mongoose": "8.10.0",
-    "uuid": "^10.0.0"
+    "uuid": "^10.0.0",
+    "dotenv": "16.4.7"
   }
 }
