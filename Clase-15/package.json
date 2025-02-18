@@ -1,0 +1,19 @@
+{
+  "name": "clase-14",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch  src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "8.10.0",
+    "uuid": "^10.0.0",
+    "dotenv": "16.4.7"
+  }
+}
